@@ -1,0 +1,21 @@
+#ErrorDocument 404 https://www.zappvariety.com/
+RewriteEngine On 
+#RewriteCond %{HTTP_HOST} ^zappvariety\.com [NC]
+#RewriteCond %{SERVER_PORT} 80 
+#RewriteRule ^(.*)$ https://www.zappvariety.com/$1 [R,L]
+
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteRule ^ติดต่อ(.*)$ /index.php?route=contact [L,QSA]
+
+
+RewriteRule ^หมวดหมู่/(.*)/(.*)$ /index.php?route=cat&id=$1&text=$2 [L,QSA]
+RewriteRule ^category/(.*)/(.*)$ /index.php?route=cat&id=$1&text=$2 [L,QSA]
+RewriteRule ^ข่าว(.*)/(.*)/(.*)$ /index.php?route=detail&cat=$1&id=$2&text=$3 [L,QSA]
+RewriteRule ^news(.*)/(.*)/(.*)$ /index.php?route=detail&cat=$1&id=$2&text=$3 [L,QSA]
+RewriteRule ^หน้าหลัก(.*)$ /index.php?route=home [L,QSA]
+RewriteRule ^วีดีโอ$ /index.php?route=video [L,QSA]
+RewriteRule ^vdo$ /index.php?route=video [L,QSA]
+RewriteRule ^วีดีโอ/(.*)/(.*)$ /index.php?route=video/video_detail&id=$1&text=$2 [L,QSA]
+RewriteRule ^vdo/(.*)/(.*)$ /index.php?route=video/video_detail&id=$1&text=$2 [L,QSA]

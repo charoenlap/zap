@@ -1,0 +1,178 @@
+.video-item{
+  max-height: 200px;
+  overflow-y: hidden;
+}
+hr {
+    background-color: #eee !important;
+  }
+
+  .pagination {
+    padding: 20px;
+  }
+
+  .pagination>li>a {
+    color: orange;
+  } 
+
+  .pagination>li>a:focus,
+  .pagination>li>a:hover,
+  .pagination>li>span:focus,
+  .pagination>li>span:hover {
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+  }
+
+  .navbar-brand .img-logo {
+    /*width: 160px;*/
+    /*width: 200px;*/
+    width: 180px;
+    position: relative;
+    bottom: 30px;
+    margin: 0;
+  }
+  .is-sticky .img-logo {
+    width: 140px;
+    bottom: 0;
+  }
+  .mean-container .img-logo {
+    width: 140px;
+    top: 0;
+    padding: 0;
+  }
+  .mean-bar {
+    margin-top: 40px;
+  } 
+
+  @font-face {
+    font-family: "Kanit";
+    src: url("https://www.fsoftpro.com/projects/zapvarity/html/assets/fonts/Kanit/Kanit-Medium.ttf") !important;
+  }
+
+  .font-head li a {
+    font-family: "Kanit";
+  }
+
+  .footer-logo {
+      height: 100px;
+      /*margin: 10px;*/
+  }
+  .footer-link {
+      margin: 0;
+      padding: 0;
+  }
+  .footer-link>li {
+      display: inline;
+  }
+  .footer-link>li>a {
+      color: white;
+      display: inline-block;
+      padding: 0 10px;
+  }
+  .footer-area {
+      /*padding-top: 20px;*/
+      /*padding-bottom: 20px;*/
+  }
+  @media only screen and (max-width: 767px) {
+    .top-header-social {
+      margin-bottom: 0px;
+    }
+  }
+  .top-header-social {
+    /*background-color: whitesmoke;*/
+    background-color: #fff;
+    padding: 0;
+  }
+  .top-header-social li a i {
+    background-color: black;
+    color: white;
+  }
+  .top-header-area {
+    /*background-color: whitesmoke;*/
+    background-color: #fff;
+  }
+/*  .content-detail,.content-detail span,.content-detail .MsoNoSpacing,.content-detail p > span {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size:16px !important;
+    line-height: 18px !important;
+    color:#656565 !important;
+  }*/
+ 
+  .container-fluid-img-overlay.wrapper {
+    text-align: center;
+    max-height:350px;
+    overflow-y: hidden;
+  }
+  .container-fluid-img-overlay.wrapper img{
+    width:100%;
+    text-align: center;
+    vertical-align: middle; 
+    display: table-cell;
+    /*margin-top: -50%;*/
+  }
+  .top-header-social.text-right a{
+    color:#dc3545!important;
+  }
+  .collapse.navbar-collapse.mean-menu.overflow-auto{
+    /*border-top:solid 1px #ff661f;*/
+  }
+.single-news-item .news-image{
+  /*max-height:200px;*/
+  overflow-y:hidden;
+}
+.single-news-item .news-content h4{
+  max-height: 55px;
+  overflow-y: hidden;
+}
+.single-most-popular-news .popular-news-image {
+    overflow: hidden;
+    max-height: 200px;
+}
+.single-main-news-inner{
+  max-height:300px;
+}
+
+
+/*  */
+.bg-parallax {
+  height: 500px;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* color */
+.color-facebook {
+  background-color: #3b5999 !important;
+}
+.color-instagram {
+  background-color: #e4405f !important;
+}
+.color-youtube {
+  background-color: #cd201f !important;
+}
+
+/* images */
+.single-main-news img {
+  /*min-height: 335px;*/
+}
+.single-main-news-inner img {
+  /*min-height: 160px;*/
+  margin-bottom: 35px;
+}
+.single-main-news::before,
+.single-main-news-inner::before {
+  display: none !important;
+}
+/* size icon */
+.view-size {
+  font-size: 26px;
+}
+
+/* video */
+.video-item .video-news-image i {
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%,-50%);
+}
